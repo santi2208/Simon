@@ -3,7 +3,8 @@ const cacheName = 'news-v1';
 const staticAssets = [
   './',
   './index.js',
-  './styles.css'
+  './styles.css',
+  './sweetalert.min.js'
   ];
 
 self.addEventListener('install', async function () {
