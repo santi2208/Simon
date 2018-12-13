@@ -3,6 +3,10 @@ const violeta = document.getElementById('violeta')
 const naranja = document.getElementById('naranja')
 const verde = document.getElementById('verde')
 const btnEmpezar = document.getElementById('btnEmpezar')
+const audioCeleste = document.getElementById("audioCeleste");
+const audioVioleta = document.getElementById("audioVioleta");
+const audioNaranja = document.getElementById("audioNaranja");
+const audioVerde = document.getElementById("audioVerde");
 const ULTIMO_NIVEL = 3
 
 const coloresNums = {
@@ -41,6 +45,12 @@ class Juego {
             verde
         }
 
+        this.audios = {
+            'celeste':audioCeleste,
+            'violeta':audioVioleta,
+            'naranja':audioNaranja,
+            'verde': audioVerde 
+        }
     }
 
     generarSecuencia() {
@@ -61,6 +71,7 @@ class Juego {
 
     iluminarColor(color) {
         this.colores[color].classList.add('light')
+        this.audios[color].play();
         setTimeout(() => this.apagarColor(color), 350)
     }
 
@@ -86,6 +97,7 @@ class Juego {
     }
 
     elegirColor(ev) {
+        
         const nombreColor = ev.target.dataset.color
         const numeroColor = coloresDescriptsNums[nombreColor]
         this.iluminarColor(nombreColor)

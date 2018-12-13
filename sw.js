@@ -4,7 +4,8 @@ const staticAssets = [
   './',
   './index.js',
   './styles.css',
-  './sweetalert.min.js'
+  './sweetalert.min.js',
+  './audios'
   ];
 
 self.addEventListener('install', async function () {
