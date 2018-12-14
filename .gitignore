@@ -1,3 +1,5 @@
 sw.1.js
 simon-says.zip
 testSound.html
+# Dependency directories
+node_modules/
