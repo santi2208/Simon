@@ -1,5 +1,5 @@
 // importScripts('./node_modules/workbox-sw/build/workbox-sw.js')
-importScripts('./node_modules/workbox-sw/controllers/WorkboxSW.mjs')
+// importScripts('./node_modules/workbox-sw/controllers/WorkboxSW.mjs')
 const staticAssets = [
   './',
   './index.js',
