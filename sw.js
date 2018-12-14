@@ -14,5 +14,4 @@ const staticAssets = [
   './audios'
   ];
 
-  const wb = new WorkboxSW()
-  wb.precache(staticAssets)
+  workbox.precaching.precacheAndRoute(staticAssets)
